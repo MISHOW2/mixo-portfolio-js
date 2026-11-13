@@ -2,7 +2,8 @@ import vintage808Home from "@/assets/project-vintage808-home.png";
 import vintage808Products from "@/assets/project-vintage808-products.png";
 import nexDeskDashboard from "@/assets/project-nexdesk-dashboard.png";
 import nexDeskLogin from "@/assets/project-nexdesk-login.png";
-import awards from "@/assets/project-awards.jpg";
+import awardsLogin from "@/assets/project-awards-login.png";
+import awardsNominees from "@/assets/project-awards-nominees.png";
 import crm from "@/assets/project-crm.jpg";
 export const profile = {
   name: "Mixo Shibambo",
@@ -75,7 +76,9 @@ export const projects = [
     ],
     role: "Built and deployed the full app; supported judges during the event.",
     tech: ["JavaScript", "Node.js", "Vercel"],
-    image: awards,
+    liveUrl: "https://adjudix.co.za/",
+    image: awardsNominees,
+    screenshots: [awardsLogin, awardsNominees],
   },
   {
     slug: "react-crm",
