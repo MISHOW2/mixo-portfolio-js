@@ -15,8 +15,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Mixo Shibambo — Full-stack Developer Portfolio" },
       {
         property: "og:description",
-        content:
-          "Selected projects: Vintage808, TicketFlow, TVET Excellence Awards and a React CRM.",
+        content: "Selected projects: Vintage808, NexDesk, TVET Excellence Awards and a React CRM.",
       },
     ],
   }),

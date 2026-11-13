@@ -1,6 +1,7 @@
 import vintage808Home from "@/assets/project-vintage808-home.png";
 import vintage808Products from "@/assets/project-vintage808-products.png";
-import ticketflow from "@/assets/project-ticketflow.jpg";
+import nexDeskDashboard from "@/assets/project-nexdesk-dashboard.png";
+import nexDeskLogin from "@/assets/project-nexdesk-login.png";
 import awards from "@/assets/project-awards.jpg";
 import crm from "@/assets/project-crm.jpg";
 export const profile = {
@@ -39,22 +40,24 @@ export const projects = [
     screenshots: [vintage808Home, vintage808Products],
   },
   {
-    slug: "ticketflow",
-    title: "TicketFlow",
-    category: "Management system",
+    slug: "nex-desk",
+    title: "NexDesk",
+    category: "Service desk · Web app",
     year: "2025",
-    summary: "Ticket management system with a secure login flow and a team dashboard.",
+    summary: "Service desk platform for managing support requests, SLAs and team knowledge.",
     problem:
       "Support requests arrived by email, phone and walk-ins with no single place to log, assign or follow up on them, so issues were forgotten and nobody could see the workload.",
     solution: [
       "Users log tickets; staff assign, update status and resolve them",
-      "Login flow with hashed passwords, JWT sessions and protected routes",
+      "Track service performance, ticket priorities and SLA status from the dashboard",
       "Role-based access so staff and admins see different views",
-      "Dashboard showing open, in-progress and resolved tickets",
+      "Knowledge base and reports to help teams manage support operations",
     ],
     role: "Designed the data model and API, built the auth flow and the dashboard.",
     tech: ["Node.js", "Express", "MongoDB", "JWT", "REST API"],
-    image: ticketflow,
+    liveUrl: "https://nex-desk-iota.vercel.app/",
+    image: nexDeskDashboard,
+    screenshots: [nexDeskDashboard, nexDeskLogin],
   },
   {
     slug: "tvet-excellence-awards",
