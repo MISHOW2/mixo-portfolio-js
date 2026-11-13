@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { profile } from "@/data/portfolio";
 export const Route = createFileRoute("/about")({
@@ -75,6 +75,34 @@ function AboutPage() {
           ))}
         </dl>
       </div>
+      <section id="cv" className="mx-auto mt-20 max-w-6xl px-5 pb-20">
+        <div className="flex flex-wrap items-end justify-between gap-5">
+          <div>
+            <p className="eyebrow">Curriculum vitae</p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">My CV</h2>
+            <p className="mt-2 text-muted-foreground">
+              View my experience, projects, education and certifications.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Button asChild variant="ember">
+              <a href={profile.cv} target="_blank" rel="noreferrer">
+                Open full CV <ExternalLink />
+              </a>
+            </Button>
+            <Button asChild variant="line">
+              <a href={profile.cv} download>
+                Download PDF <Download />
+              </a>
+            </Button>
+          </div>
+        </div>
+        <iframe
+          src={profile.cv}
+          title="Mixo Shibambo's CV"
+          className="mt-8 h-[75vh] min-h-[480px] w-full rounded-2xl border border-border bg-card"
+        />
+      </section>
     </div>
   );
 }

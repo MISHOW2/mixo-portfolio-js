@@ -15,7 +15,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Mixo Shibambo — Full-stack Developer Portfolio" },
       {
         property: "og:description",
-        content: "Selected projects: Vintage808, NexDesk, TVET Excellence Awards and a React CRM.",
+        content:
+          "Selected projects: Vintage808, its admin portal, NexDesk and TVET Excellence Awards.",
       },
     ],
   }),
@@ -65,6 +66,11 @@ function Index() {
             </Button>
             <Button asChild variant="line" size="xl">
               <Link to="/contact">Get in touch</Link>
+            </Button>
+            <Button asChild variant="line" size="xl">
+              <a href={profile.cv} target="_blank" rel="noreferrer">
+                View my CV
+              </a>
             </Button>
           </div>
 

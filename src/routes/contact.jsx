@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowUpRight, Github, Mail, Phone } from "lucide-react";
 import { profile } from "@/data/portfolio";
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -20,8 +20,18 @@ export const Route = createFileRoute("/contact")({
 });
 const channels = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
-  { label: "LinkedIn", value: "Connect with me", href: profile.linkedin, icon: Linkedin },
-  { label: "GitHub", value: "Browse my code", href: profile.github, icon: Github },
+  {
+    label: "Phone",
+    value: profile.phone,
+    href: `tel:${profile.phone.replaceAll(" ", "")}`,
+    icon: Phone,
+  },
+  {
+    label: "GitHub",
+    value: profile.github.replace("https://", ""),
+    href: profile.github,
+    icon: Github,
+  },
 ];
 function ContactPage() {
   return (
@@ -57,6 +67,18 @@ function ContactPage() {
             </a>
           ))}
         </div>
+        <p className="mt-10 text-muted-foreground">
+          Want more detail?{" "}
+          <a
+            href={profile.cv}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-primary underline-offset-4 hover:underline"
+          >
+            View my CV
+          </a>
+          .
+        </p>
       </div>
     </div>
   );

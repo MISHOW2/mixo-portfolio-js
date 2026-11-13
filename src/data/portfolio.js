@@ -4,7 +4,8 @@ import nexDeskDashboard from "@/assets/project-nexdesk-dashboard.png";
 import nexDeskLogin from "@/assets/project-nexdesk-login.png";
 import awardsLogin from "@/assets/project-awards-login.png";
 import awardsNominees from "@/assets/project-awards-nominees.png";
-import crm from "@/assets/project-crm.jpg";
+import vintage808AdminOverview from "@/assets/project-vintage808-admin-overview.png";
+import vintage808AdminProduct from "@/assets/project-vintage808-admin-product.png";
 export const profile = {
   name: "Mixo Shibambo",
   firstName: "Mixo",
@@ -13,10 +14,10 @@ export const profile = {
   headline: "I build web apps that handle real money, real users and real workflows.",
   intro:
     "Full-stack developer working with Node.js, Express, MongoDB and React. I ship e-commerce platforms, management systems and web apps for freelance clients, and keep a TVET college campus running in IT support.",
-  // Placeholder contact details: replace with the real ones.
-  email: "mixo.shibambo@example.com",
-  github: "https://github.com/",
-  linkedin: "https://www.linkedin.com/",
+  email: "shibambomixo0@gmail.com",
+  phone: "073 695 7847",
+  github: "https://github.com/MISHOW2",
+  cv: "/Mixo_Shibambo_CV.pdf",
   availability: "Open to junior / intermediate developer roles and freelance work",
 };
 export const projects = [
@@ -81,22 +82,23 @@ export const projects = [
     screenshots: [awardsLogin, awardsNominees],
   },
   {
-    slug: "react-crm",
-    title: "React CRM",
-    category: "Learning project",
-    year: "2024",
-    summary: "Customer relationship manager built to practise React architecture.",
+    slug: "vintage808-admin",
+    title: "Vintage808 Admin Portal",
+    category: "E-commerce admin · Client project",
+    year: "2025",
+    summary: "An admin portal for managing Vintage808 products, orders and customers.",
     problem:
-      "I wanted to move beyond vanilla JavaScript and learn how to structure a larger React app with shared state, reusable components and clean data flow.",
+      "The Vintage808 store needed a central place to monitor sales and manage its product catalogue and customer orders.",
     solution: [
-      "Contact list, detail views and a simple sales pipeline",
-      "Reusable component library for forms, tables and cards",
-      "Centralised state management for contacts and deals",
-      "Clear folder structure separating UI, state and data logic",
+      "Overview dashboard with revenue, order value, customer and fulfilment metrics",
+      "Product catalogue management, including image uploads, pricing, sizes and stock",
+      "Dedicated areas for orders, customers and store settings",
+      "Admin sign-in to keep store management separate from the customer storefront",
     ],
-    role: "Personal project: planned, designed and built end to end.",
-    tech: ["React", "JavaScript", "State management", "CSS"],
-    image: crm,
+    role: "Built the store's admin experience as part of the Vintage808 e-commerce project.",
+    tech: ["Node.js", "Express", "MongoDB", "JWT", "React", "JavaScript"],
+    image: vintage808AdminOverview,
+    screenshots: [vintage808AdminOverview, vintage808AdminProduct],
   },
 ];
 export const skillGroups = [

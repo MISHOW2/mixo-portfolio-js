@@ -13,14 +13,6 @@ export function SiteFooter() {
           <a href={profile.github} target="_blank" rel="noreferrer" className="hover:text-primary">
             GitHub
           </a>
-          <a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-primary"
-          >
-            LinkedIn
-          </a>
         </div>
       </div>
     </footer>
